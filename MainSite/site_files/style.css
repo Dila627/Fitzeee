@@ -39,13 +39,6 @@ max-width: 1140px;
 margin: 0 auto;
 padding: 0 10px;
 }
-.container-ww{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: row;
-    }
 
 .flex{
    display: flex;
@@ -531,6 +524,7 @@ h3{
     position: relative;
 }
 
+
 .text-back{
  color: #bcbcbc;
  letter-spacing: 2px;
@@ -538,12 +532,12 @@ h3{
  font-size: 150px;
  font-family: 'Inknut Antiqua', serif;
  -webkit-text-stroke-width: 2px;
- position: absolute;
  margin: 0;
  padding: 0;
  top: 60px;
- right: 0;
- opacity: 0.2;
+ right:0;
+ opacity: 0.4;
+ position: absolute;
 }
 .text-stroke{
     margin: 0;
@@ -553,20 +547,18 @@ h3{
     color: #bcbcbc;
     letter-spacing: 2px;
     text-transform: uppercase;
-    position: absolute;
     font-size: 150px;
     font-family: 'Inknut Antiqua', serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     z-index: -20px;
     opacity: 0.4;
-    
+    position: absolute;
 }
+
  .content-ww{
-   position: absolute;
    width: 50%;
    height: 50%;
-   background-color:black;
    opacity: 70%;
    top: 20%;
    left: 5%;
@@ -588,6 +580,75 @@ h3{
     padding: .5rem 0;
     line-height: 1.5;
 }
+.about-img1{
+   position: static;
+    z-index: 4;
+}
+.content-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+ .about-3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} 
+.background-text{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1.5rem;
+
+} 
+.container-ww{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+    }
+
+.wrapper-banner{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    color: #000000;
+    max-width: 700px;
+    padding-left: 50px;
+}
+.about-text h2{
+    font-size: 42px;
+}
+.about-text p{
+    font-size: 16px;
+}
+@media screen and (max-width: 700px) {
+    .content-app{
+        flex-direction: column;
+    } 
+    .about-img1{
+        padding: 60px 0;
+    }  
+    .about-3{
+        padding: 60px 0;
+        height: 1000px;
+    } 
+    
+.text-back{
+    font-size: 70px;
+    top: 60px;
+   }
+   .text-stroke{
+       bottom: 480px;
+       font-size: 70px;
+   }
+   
+  }
 /*-----------Man WorkOut Page----------*/
 .manWorkout{
     height: 100vh;
@@ -614,6 +675,7 @@ h3{
     flex-direction: column;
 }
 
+
 .content-mw h3{ 
     color: #ffffff;
     font-size: 5rem;
@@ -625,6 +687,7 @@ h3{
     line-height: 1.5;
 }
 .about-1{
+    
     display: grid;
     grid-template-columns: repeat(2,2fr);
     grid-gap: 1.5rem;
@@ -639,16 +702,7 @@ h3{
     align-items: center;
     max-width: fit-content;
 } 
-.about-text{
-    color: #000000;
-    max-width: fit-content;
-}
-.about-text h2{
-    font-size: 42px;
-}
-.about-text p{
-    font-size: 16px;
-}
+
 
 
 /*-----------Walking Page----------*/
